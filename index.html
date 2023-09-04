@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>sticky</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+        <style>
+            *
+            {
+                padding: 0;
+                margin: 0;
+            }
+            .navbar {
+                background-color: #333;
+                position: sticky;
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                top: 0; 
+                z-index: 100;
+            }
+            .set1,
+            .set2,
+            .set3 {
+                display: flex;
+                gap: 10px;
+            }
+            .navbar a {
+                text-decoration: none;
+                color: #fff;
+                padding: 5px 10px;
+            }
+            .set1 {
+                order: 1; /* Change the order of set1 */
+            }
+
+            .set2 {
+                order: 3; /* Change the order of set2 */
+            }
+
+            .set3 {
+                order: 2; /* Change the order of set3 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="set1">
+                <a href="#">Anjali&co</a>
+            </div>
+            <div class="set2">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <div class="set3">
+                <a href="#">Contact</a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+            </div>
+        </div>
+    </body>
+</html>
